@@ -49,6 +49,8 @@ body {
 
 
 
+
+
 /* ----------------------------------------------------------------------------------------------- */
 /* CARD PROPERTY */
 .card-left {
@@ -146,6 +148,10 @@ body {
     float: left;
 }
 
+.width-fit-content{
+    max-width: fit-content;
+}
+
 
 
 /* ----------------------------------------------------------------------------------------------- */
@@ -168,6 +174,11 @@ body {
 
 .border-solid-2-d1b {
     border: 2px solid #254766;
+}
+
+.rounded-bottom {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 /* PADDING PROPERTY */
@@ -412,7 +423,6 @@ a:hover {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-
 }
 
 .testo-flex {
@@ -497,8 +507,6 @@ a:hover {
 }
 
 
-
-
 /* ----------------------------------------------------------------------------------------------- */
 /* CSS PER IL DIV HERO CON FOTO E FRASE DI PRESENTAZIONE (TABLET PICCOLO)*/
 @media (max-width: 700px) {
@@ -512,10 +520,6 @@ a:hover {
         margin-top: 0;
     }
 }
-
-
-
-
 
 
 /* ----------------------------------------------------------------------------------------------- */
@@ -553,8 +557,6 @@ a:hover {
         text-align: center;
     }
 }
-
-
 
 
 /* ----------------------------------------------------------------------------------------------- */
@@ -639,6 +641,10 @@ a:hover {
     margin-top: -10px;
 }
 
+.separatore-1 {
+    width: 100%;
+    height: 15px;
+}
 
 
 
@@ -706,9 +712,6 @@ a:hover {
     padding-bottom: 5px;
 }
 
-
-
-
 /* CSS PER LA GRIGLIA CERTIFICATIONS.HTML A SCHERMO INTERO SU PC*/
 .section-carousel {
     min-height: 1000px;
@@ -722,9 +725,10 @@ a:hover {
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 60px 240px 60px 240px;
+    grid-template-rows: 60px 240px 60px 250px;
 }
 
+/* IMMAGINI PRIMA GRIGLIA */
 #i1 {
     grid-area: 2 / 1 / 5 /1;
 }
@@ -737,6 +741,81 @@ a:hover {
     grid-area: 2 / 3 / 3 /4;
 }
 
+/* LINK SECONDA GRIGLIA */
+/* 
+#t1-2 {
+
+}
+
+#t2-2 {
+
+}
+
+#t3-2 {
+    
+}
+
+#t4-2 {
+    
+}
+
+#t5-2 {
+    
+}
+
+#t6-2 {
+    
+}
+
+#t7-2 {
+    
+}
+
+#t8-2 {
+    
+} */
+
+/* IMMAGINI SECONDA GRIGLIA*/
+/* 
+#i1-2 {
+
+}
+
+#i2-2 {
+
+}
+
+#i3-2 {
+    
+}
+
+#i4-2 {
+    
+}
+
+#i5-2 {
+    
+}
+
+#i6-2 {
+    
+}
+
+#i7-2 {
+    
+}
+
+#i8-2 {
+    
+} */
+
+#i7-2 {
+    grid-area: 6 / 1 / 6 / 1;
+}
+
+#i8-2 {
+    grid-area: 6 / 2 / 6 / 2;
+}
 
 .grid-div2 {
     width: 95%;
@@ -747,7 +826,7 @@ a:hover {
     justify-content: center;
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 60px 240px 60px 350px;
+    grid-template-rows: 60px 240px 60px 240px;
 }
 
 /* ----------------------------------------------------------------------------------------------- */
@@ -760,31 +839,49 @@ a:hover {
     }
 
     .grid-div1 {
-        width: 90%;
-        margin-bottom: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        min-height: fit-content;
-        display: grid;
-        gap: 10px;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 60px 240px 60px 280px 60px 350px;
+        grid-template-rows: 60px 600px 60px 240px;
     }
 
+    /* TITOLO 1 */
+
+    #t1 {
+        grid-area: 1 / 1 / 1 / 1;
+    }
+
+    /* IMMAGINE 1 */
+    #i1 {
+        grid-area: 2 / 1 / 2 / 1;
+    }
+
+    /* TITOLO 2 */
+    #t2 {
+        grid-area: 1 / 2 / 1 / 2;
+    }
+
+    /* IMMAGINE 2 */
+    #i2 {
+        grid-area: 2 / 2 / 2 / 2;
+    }
+
+    /* TITOLO 3 */
     #t3 {
-        grid-area: 5 / 1 / 5 / 1;
+        grid-area: 3 / 1 /3 / 1;
     }
 
+    /* IMMAGINE 3 */
     #i3 {
-        grid-area: 6 / 1 / 6 / 1;
+        grid-area: 4 / 1 / 4 / 1;
     }
 
+    /* TITOLO 4 */
     #t4 {
-        grid-area: 5 / 2 / 5 / 2;
+        grid-area: 3 / 2 / 3 / 2;
     }
 
+    /* IMMAGINE 4 */
     #i4 {
-        grid-area: 6 / 2 / 6 / 2;
+        grid-area: 4 / 2 / 4 / 2;
     }
 
     .minor {
@@ -792,15 +889,8 @@ a:hover {
     }
 
     .grid-div2 {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        min-height: fit-content;
-        display: grid;
-        justify-content: center;
-        gap: 10px;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 60px 240px 60px 350px 60pxs;
+        grid-template-rows: 60px 240px;
     }
 
     /* IMMAGINE BASH MASTERY */
@@ -823,152 +913,15 @@ a:hover {
         grid-area: 4 / 2 / 4 / 2;
     }
 
-
-
-}
-
-
-/* ----------------------------------------------------------------------------------------------- */
-/* CSS PER LA GRIGLIA CON LE CERTIFICAZIONI (TABLET)*/
-@media (max-width: 1250px) {
-
-
-    .section-carousel {
-        min-height: 1000px;
+    /* IMMAGINE COMMVAULT FONDATION */
+    #i7-2 {
+        grid-area: 9 / 1 / 9 / 1;
     }
 
-    .grid-div1 {
-        width: 90%;
-        margin-bottom: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        min-height: fit-content;
-        display: grid;
-        gap: 10px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 60px 240px 60px 280px 60px 350px;
+    /* IMMAGINE COMMVAULT ADVANCED */
+    #i8-2 {
+        grid-area: 9 / 2 / 9 / 2;
     }
-
-
-    /* TITOLO LPIC LINUX */
-    #t3 {
-        grid-area: 5 / 1 / 5 / 1;
-    }
-
-    /* IMMAGINE LPIC LINUX */
-    #i3 {
-        grid-area: 6 / 1 / 6 / 1;
-    }
-
-    /* TITOLO LPIC MASTERY */
-    #t4 {
-        grid-area: 5 / 2 / 5 / 2;
-    }
-
-    /* IMMAGINE LPIC MASTERY */
-    #i4 {
-        grid-area: 6 / 2 / 6 / 2;
-    }
-
-    .grid-div2 {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        min-height: fit-content;
-        display: grid;
-        justify-content: center;
-        gap: 10px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 60px 240px 60px 350px 60pxs;
-    }
-
-    /* IMMAGINE BASH MASTERY */
-    #i1-2 {
-        grid-area: 2 / 1 / 2 / 1;
-    }
-
-    /* IMMAGINE LINUX MASTERY */
-    #i2-2 {
-        grid-area: 2 / 2 / 2 / 2;
-    }
-
-    /* TITOLO LINEE ELETTRICHE ALTO VOLTAGGIO*/
-    #t4-2 {
-        grid-area: 3 / 2 / 3 / 2;
-    }
-
-    /* IMMAGINE LINEE ELETTRICHE ALTO VOLTAGGIO*/
-    #i4-2 {
-        grid-area: 4 / 2 / 4 / 2;
-    }
-
-}
-
-
-
-
-
-
-/* ----------------------------------------------------------------------------------------------- */
-/* CSS PER LA GRIGLIA CON LE CERTIFICAZIONI (cELLULARE)*/
-@media (max-width: 1000px) {
-
-
-    .section-carousel {
-        min-height: 1000px;
-    }
-
-    .grid-div1 {
-        width: 90%;
-        margin-bottom: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        min-height: fit-content;
-        display: grid;
-        gap: 10px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 60px 500px 60px 500px 60px 240px 60px 240px ;
-    }
-
-    .minor {
-        height: 500px;
-    }
-
-    /* TITOLO 2 */
-    #t2{
-        grid-area: 3 / 1 /3 / 1 ;
-    }
-    /* IMMAGINE 2 */
-    #i2{
-        grid-area: 4 / 1 / 4 / 1 ;
-    }
-
-    /* TITOLO 2 */
-    #t4{
-        grid-area: 7 / 1 /7 / 1 ;
-    }
-    /* IMMAGINE 2 */
-    #i4{
-        grid-area: 8 / 1 / 8 / 1 ;
-    }
-
-    
-
-    .grid-div2 {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        min-height: fit-content;
-        display: grid;
-        justify-content: center;
-        gap: 10px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 60px 240px 60px 350px 60pxs;
-    }
-
-    
-
-
 
 }
 
@@ -976,7 +929,7 @@ a:hover {
 
 /* ----------------------------------------------------------------------------------------------- */
 /* CSS PER LA GRIGLIA CON LE CERTIFICAZIONI (cELLULARE)*/
-@media (max-width: 700px) {
+@media (max-width: 950px) {
 
 
     .section-carousel {
@@ -984,99 +937,140 @@ a:hover {
     }
 
     .grid-div1 {
-        width: 90%;
-        margin-bottom: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        min-height: fit-content;
-        display: grid;
-        gap: 10px;
         grid-template-columns: 1fr;
-        grid-template-rows: 60px 400px 60px 400px 60px 240px 60px 240px ;
+        grid-template-rows: 60px 400px 60px 400px 60px 240px 60px 240px;
     }
+
     .minor {
         height: 400px;
     }
 
-    /* TITOLO 2 */
-    #t2{
-        grid-area: 3 / 1 /3 / 1 ;
-    }
-    /* IMMAGINE 2 */
-    #i2{
-        grid-area: 4 / 1 / 4 / 1 ;
-    }
-
-    /* TITOLO 2 */
-    #t4{
-        grid-area: 7 / 1 /7 / 1 ;
-    }
-    /* IMMAGINE 2 */
-    #i4{
-        grid-area: 8 / 1 / 8 / 1 ;
-    }
-
-    
-
-    .grid-div2 {
-        grid-template-columns: 1fr;
-        grid-template-rows: 60px 240px 60px 240px 60px 240px 60px 240px 60px 240px 60px 240px;
-    }
-
     /* TITOLO 1 */
-    #t1-2{
-        grid-area: 1 / 1 / 1 / 1 ;
+    #t1 {
+        grid-area: 1 / 1 / 1 / 1;
     }
+
     /* IMMAGINE 1 */
-    #i1-2{
-        grid-area: 2 / 1 / 2 / 1 ;
+    #i1 {
+        grid-area: 2 / 1 / 2 / 1;
     }
 
     /* TITOLO 2 */
-    #t2-2{
-        grid-area: 3 / 1 /3 / 1 ;
+    #t2 {
+        grid-area: 3 / 1 / 3 / 1;
     }
-    /* IMMAGINE 2 */
-    #i2-2{
-        grid-area: 4 / 1 / 4 / 1 ;
+
+    /* IMMAGINE 3 */
+    #i2 {
+        grid-area: 4 / 1 / 4 / 1;
     }
 
     /* TITOLO 3 */
-    #t3-2{
-        grid-area: 5 / 1 /5 / 1 ;
+    #t3 {
+        grid-area: 5 / 1 / 5 / 1;
     }
+
     /* IMMAGINE 3 */
-    #i3-2{
-        grid-area: 6 / 1 / 6 / 1 ;
+    #i3 {
+        grid-area: 6 / 1 / 6 / 1;
+    }
+
+    /* TITOLO 3 */
+    #t4 {
+        grid-area: 7 / 1 / 7 / 1;
+    }
+
+    /* IMMAGINE 4 */
+    #i4 {
+        grid-area: 8 / 1 / 8 / 1;
+    }
+
+
+
+    .grid-div2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 240px;
+    }
+
+    /* TITOLO 1 */
+    #t1-2 {
+        grid-area: 1 / 1 / 1 / 1;
+    }
+
+    /* IMMAGINE 1 */
+    #i1-2 {
+        grid-area: 2 / 1 / 2 / 1;
+    }
+
+    /* TITOLO 2 */
+    #t2-2 {
+        grid-area: 3 / 1 /3 / 1;
+    }
+
+    /* IMMAGINE 2 */
+    #i2-2 {
+        grid-area: 4 / 1 / 4 / 1;
+    }
+
+    /* TITOLO 3 */
+    #t3-2 {
+        grid-area: 5 / 1 /5 / 1;
+    }
+
+    /* IMMAGINE 3 */
+    #i3-2 {
+        grid-area: 6 / 1 / 6 / 1;
     }
 
     /* TITOLO 4 */
-    #t4-2{
-        grid-area: 7 / 1 / 7 / 1 ;
+    #t4-2 {
+        grid-area: 7 / 1 / 7 / 1;
     }
+
     /* IMMAGINE 4 */
-    #i4-2{
-        grid-area: 8 / 1 / 8 / 1 ;
+    #i4-2 {
+        grid-area: 8 / 1 / 8 / 1;
     }
 
     /* TITOLO 5 */
-    #t5-2{
-        grid-area: 9 / 1 / 9 / 1 ;
+    #t5-2 {
+        grid-area: 9 / 1 / 9 / 1;
     }
+
     /* IMMAGINE 5 */
-    #i5-2{
-        grid-area: 10 / 1 / 10 / 1 ;
+    #i5-2 {
+        grid-area: 10 / 1 / 10 / 1;
     }
 
     /* TITOLO 6 */
-    #t6-2{
-        grid-area: 11 / 1 / 11 / 1 ;
+    #t6-2 {
+        grid-area: 11 / 1 / 11 / 1;
     }
+
     /* IMMAGINE 6 */
-    #i6-2{
-        grid-area: 12 / 1 / 12 / 1 ;
+    #i6-2 {
+        grid-area: 12 / 1 / 12 / 1;
+    }
+
+    /* TESTO COMMVAULT FONDATION */
+    #t7-2 {
+        grid-area: 13 / 1 / 13 / 1;
+    }
+
+    /* IMMAGINE COMMVAULT FONDATION */
+    #i7-2 {
+        grid-area: 14 / 1 / 14 / 1;
     }
 
 
+    /* IMMAGINE COMMVAULT ADVANCED */
+    #t8-2 {
+        grid-area: 15 / 1 / 15 / 1;
+    }
+
+    /* IMMAGINE COMMVAULT ADVANCED */
+    #i8-2 {
+        grid-area: 16 / 1 / 16 / 1;
+    }
 
 }
