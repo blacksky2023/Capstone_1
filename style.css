@@ -788,6 +788,10 @@ a:hover {
         grid-area: 6 / 2 / 6 / 2;
     }
 
+    .minor {
+        height: 600px;
+    }
+
     .grid-div2 {
         width: 90%;
         margin-left: auto;
@@ -845,6 +849,7 @@ a:hover {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 60px 240px 60px 280px 60px 350px;
     }
+
 
     /* TITOLO LPIC LINUX */
     #t3 {
@@ -923,7 +928,11 @@ a:hover {
         display: grid;
         gap: 10px;
         grid-template-columns: 1fr;
-        grid-template-rows: 60px 600px 60px 600px 60px 240px 60px 240px ;
+        grid-template-rows: 60px 500px 60px 500px 60px 240px 60px 240px ;
+    }
+
+    .minor {
+        height: 500px;
     }
 
     /* TITOLO 2 */
@@ -984,7 +993,10 @@ a:hover {
         display: grid;
         gap: 10px;
         grid-template-columns: 1fr;
-        grid-template-rows: 60px 600px 60px 600px 60px 240px 60px 240px ;
+        grid-template-rows: 60px 400px 60px 400px 60px 240px 60px 240px ;
+    }
+    .minor {
+        height: 400px;
     }
 
     /* TITOLO 2 */
