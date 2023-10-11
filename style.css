@@ -716,14 +716,13 @@ a:hover {
 
 .grid-div1 {
     width: 95%;
-    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
     min-height: fit-content;
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 60px 240px 60px 300px;
+    grid-template-rows: 60px 240px 60px 240px;
 }
 
 #i1 {
