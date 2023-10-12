@@ -2,21 +2,21 @@
 /* GENERIC PROPERTY */
 .gradient-background {
     /* background: linear-gradient(300deg, #BCA37F, #EAD7BB, #113946); */
-    background: linear-gradient(300deg, #BCA37F, #F39F5A, #451952);
+    background: linear-gradient(300deg, #BCA37F, #F39F5A, #652579);
     background-size: 180% 180%;
     animation: gradient-animation 10s ease infinite;
 }
 
 .gradient-background-a {
     /* background: linear-gradient(300deg, #BCA37F, #EAD7BB, #113946); */
-    background: linear-gradient(300deg, #BCA37F, #324a86, #19522b);
+    background: linear-gradient(300deg, #2e944e, #4364b6, #2e944e);
     background-size: 180% 180%;
     animation: gradient-animation 10s ease infinite;
 }
 
 .gradient-background-b {
     /* background: linear-gradient(300deg, #BCA37F, #EAD7BB, #113946); */
-    background: linear-gradient(300deg, #BCA37F, #815430, #2b1033);
+    background: linear-gradient(300deg, #BCA37F, #815430, #4d1d5c);
     background-size: 180% 180%;
     animation: gradient-animation 10s ease infinite;
 }
@@ -28,10 +28,6 @@ body {
     font-family: 'IBM Plex Serif', serif;
     font-family: 'Libre Baskerville', serif;
     font-family: 'Onest', sans-serif;
-}
-
-#carousel-content {
-    max-height: 900px;
 }
 
 
@@ -181,6 +177,9 @@ body {
     border-bottom-right-radius: 20px;
 }
 
+
+
+/* ----------------------------------------------------------------------------------------------- */
 /* PADDING PROPERTY */
 .padding-20 {
     padding: 20px;
@@ -195,8 +194,9 @@ body {
 }
 
 
-/* ----------------------------------------------------------------------------------------------- */
 
+
+/* ----------------------------------------------------------------------------------------------- */
 /* MARGIN PROPERTY */
 .margin-left-20 {
     margin-left: 20px;
@@ -307,7 +307,7 @@ a {
     padding: 8px;
     margin-bottom: 5px;
     text-decoration: none;
-    background: linear-gradient(300deg, #635541, #324a86, #19522b);
+    background: linear-gradient(300deg, #2e944e, #4364b6, #2e944e);
     background-size: 180% 180%;
     transition: background-position 0.7s ease;
 }
@@ -539,10 +539,6 @@ a:hover {
     }
 }
 
-
-
-/* ----------------------------------------------------------------------------------------------- */
-/* CSS PER IL DIV HERO CON FOTO E FRASE DI PRESENTAZIONE (CELLULARE MEDIA)*/
 @media (max-width: 570px) {
     /* FLEX CENTER */
 
@@ -712,6 +708,8 @@ a:hover {
     padding-bottom: 5px;
 }
 
+
+/* ----------------------------------------------------------------------------------------------- */
 /* CSS PER LA GRIGLIA CERTIFICATIONS.HTML A SCHERMO INTERO SU PC*/
 .section-carousel {
     min-height: 1000px;
@@ -728,15 +726,17 @@ a:hover {
     grid-template-rows: 60px 240px 60px 250px;
 }
 
-/* IMMAGINI PRIMA GRIGLIA */
+/* IMMAGINI DIPLOMA MATURITA */
 #i1 {
     grid-area: 2 / 1 / 5 /1;
 }
 
+/* IMMAGINI DIPLOMA professionale */
 #i2 {
     grid-area: 2 / 2 / 5 /2;
 }
 
+/* IMMAGINI  */
 #i3 {
     grid-area: 2 / 3 / 3 /4;
 }
